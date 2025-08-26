@@ -17,6 +17,8 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 </head>
 
 <body>
@@ -46,7 +48,7 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h6 class="m-0"><img class="img-fluid me-3" src="img/logo.webp" alt=""></h6>
+            <h6 class="m-0"><img class="img-fluid me-3" src="img/logo.png" alt=""></h6>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -452,50 +454,136 @@ This spirituality is an experience of seeking God, emphasizing:
             <div class="text-center mx-auto" style="max-width: 500px;">
                 <h1 class="display-6 mb-5">Our Latest Events</h1>
             </div> 
-            <!-- EVENTS SECTION -->
-<section class="events-section">
-  <div class="events-grid">
-    <!-- Event Card 1 -->
-    <div class="event-card">
-      <img src="img/about.png" alt="Annual Charity Day">
-      <div class="event-content">
-        <h3>Annual Charity Day</h3>
-        <p>A day dedicated to serving the poor through healthcare, meals, and prayer.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-    <!-- Event Card 2 -->
-    <div class="event-card">
-      <img src="img/bg2.png" alt="Vocation Retreat">
-      <div class="event-content">
-        <h3>Vocation Retreat</h3>
-        <p>Young women are invited to discern their call to religious life with us.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-    <!-- Event Card 3 -->
-    <div class="event-card">
-      <img src="img/bg2.png" alt="Community Outreach">
-      <div class="event-content">
-        <h3>Community Outreach</h3>
-        <p>Visiting rural areas to provide education and social support services.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-    <!-- Event Card 4 -->
-    <div class="event-card">
-      <img src="img/about.png" alt="Easter Celebration">
-      <div class="event-content">
-        <h3>Easter Celebration</h3>
-        <p>Join our joyful liturgy and community feast for all families.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-  </div>
-</section>
-        </div>
 
+
+
+
+
+                <div class="container swiper">
+      <div class="wrapper">
+        <div class="card-list swiper-wrapper">
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/bg2.png" alt="Design Trends" />
+              <div class="card-tag">Design</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Modern UI Trends for 2025</h3>
+              <p class="card-text">Explore the latest user interface design trends that are shaping the digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/WhatsApp Image 2025-08-06 at 16.52.58.jpeg" alt="Alex Smith" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Edited</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/WhatsApp Image 2025-08-06 at 16.52.59.jpeg" alt="Development" />
+              <div class="card-tag">Social</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Best Frontend Frameworks</h3>
+              <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and libraries that developers are using to build modern web applications.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="images/user-2.jpg" alt="Jessica Chen" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Editted</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/carousel-1.jpg" alt="AI" />
+              <div class="card-tag">Health</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">AI User Experience Design</h3>
+              <p class="card-text">How artificial intelligence is revolutionizing user experience design and enabling more personalized, intuitive interfaces for digital products.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/about.png" alt="Marcus Johnson" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Editted by</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/WhatsApp Image 2025-08-06 at 16.53.14.jpeg" alt="Productivity" />
+              <div class="card-tag">Education</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Workspace Design for Focus</h3>
+              <p class="card-text">Designing workspaces that maximize productivity and minimize distractions for creative professionals in the hybrid work environment.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/about.png" alt="Sarah Miller" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Edited by Admin</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/WhatsApp Image 2025-08-06 at 16.52.59.jpeg" alt="Animation" />
+              <div class="card-tag">Health</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Micro Animation Designs</h3>
+              <p class="card-text">The small animations and interactions that make a big difference in user experience and how to implement them effectively in your designs.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/about.png" alt="David Park" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Edited By</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
     </div>
+
+
+
+
+
+
+
+
 
     <!--Background-->
     <div id="history" class="container-xxl py-5">
@@ -788,6 +876,14 @@ This spirituality is an experience of seeking God, emphasizing:
 
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+
+     <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
