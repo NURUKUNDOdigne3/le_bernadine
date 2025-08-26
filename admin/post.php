@@ -1,3 +1,10 @@
+<?php
+
+include 'config/conn.php';
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,6 +23,22 @@
 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+   <style>
+    .btn-update {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn-delete {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+   </style>
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -71,60 +94,66 @@
       </div>
       <div class="profile-details">
         <img src="images/profile.jpg" alt="">
-        <span class="admin_name">Prem Shahi</span>
+        <span class="admin_name">admin</span>
         <i class='bx bx-chevron-down' ></i>
       </div>
     </nav>
-    <div class="home-content">
-    
-              
-
-
-
+    <div class="home-content">   
           </div>
-          
         </div>
       </div>    
       
             <div class="container mt-4">
-                    <h2>Event Management</h2>
+                    <h2>Add Event Panel</h2>
 
 
   <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#eventFormModal">
     + Add New Event
   </button>
 
-   <!-- Events Table -->
-  <table id="eventsTable" class="display table table-striped" style="width:100%">
-    <thead>
-      <tr>
-        <th>Event_ID</th>
-        <th>Event_Title</th>
-        <th>Sector_Name</th>
-        <th>Description</th>
-        <th>Event_Picture</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Example static row (replace with PHP loop) -->
-      <tr>
-        <td>1</td>
-        <td>Agriculture Summit</td>
-        <td>Agriculture</td>
-        <td>Annual agriculture summit for innovation.</td>
-        <td><img src="uploads/agri.jpg" width="80"></td>
-        <td>
-          <a href="update.php?id=1" class="btn btn-update btn-sm">Update</a>
-          <a href="delete.php?id=1" class="btn btn-delete btn-sm">Delete</a>
-        </td>
-      </tr>
-      <!-- End Example -->
-    </tbody>
-  </table>
+ 
+<!-- Events Table -->
+<table id="eventsTable" class="display table table-striped" style="width:100%">
+  <thead>
+    <tr>
+      <th>Event_ID</th>
+      <th>Event_Title</th>
+      <th>Sector_Name</th>
+      <th>Description</th>
+      <th>Event_Picture</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    // Fetch records from DB
+    $sql = "SELECT id, event_title, sector_name, description, event_picture FROM evnts";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $row['id'] . "</td>";
+        echo "<td>" . $row['event_title'] . "</td>";
+        echo "<td>" . $row['sector_name'] . "</td>";
+        echo "<td>" . $row['description'] . "</td>";
+        echo "<td><img src='uploads/" . $row['event_picture'] . "' width='80'></td>";
+        echo "<td>
+                <a href='update.php?id=" . $row['id'] . "' class='btn btn-update btn-sm'>Update</a>
+                <a href='delete.php?id=" . $row['id'] . "' class='btn btn-delete btn-sm'>Delete</a>
+              </td>";
+        echo "</tr>";
+      }
+    } else {
+      echo "<tr><td colspan='6' class='text-center'>No events found</td></tr>";
+    }
+   
+    ?>
+  </tbody>
+</table>
 </div>
 
-<!-- Event Form Modal -->
+
 <div class="modal fade" id="eventFormModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -132,13 +161,9 @@
         <h5 class="modal-title">Add Event</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
       </div>
-      <form action="insert.php" method="POST" enctype="multipart/form-data">
+      <form action="" method="POST" enctype="multipart/form-data">
         <div class="modal-body">
           <div class="row g-3">
-            <div class="col-md-4">
-              <label for="eventID" class="form-label">Event ID</label>
-              <input type="text" class="form-control" name="event_id" required>
-            </div>
             <div class="col-md-8">
               <label for="eventTitle" class="form-label">Event Title</label>
               <input type="text" class="form-control" name="event_title" required>
@@ -158,30 +183,60 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-success">Save Event</button>
+          <button type="submit" name="submit" class="btn btn-success">Save Event</button>
         </div>
       </form>
     </div>
   </div>
-</div>
-
-  
+</div>    
 
 
+<?php
+
+if (isset($_POST['submit'])) {
+    $event_title = mysqli_real_escape_string($conn, $_POST['event_title']);
+    $sector_name = mysqli_real_escape_string($conn, $_POST['sector_name']);
+    $description = mysqli_real_escape_string($conn, $_POST['description']);
+
+    $event_picture = null; 
+    if (isset($_FILES['event_picture']) && $_FILES['event_picture']['error'] == 0) {
+        $targetDir = "uploads/";
+       
+        $fileName = time() . "_" . basename($_FILES["event_picture"]["name"]);
+        $targetFilePath = $targetDir . $fileName;
+
+        if (move_uploaded_file($_FILES["event_picture"]["tmp_name"], $targetFilePath)) {
+            $event_picture = $fileName;
+        } else {
+            echo "Error uploading image.";
+        }
+    }
+
+
+    $sql = "INSERT INTO evnts (event_title, sector_name, description, event_picture) 
+            VALUES ('$event_title', '$sector_name', '$description', '$event_picture')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<div style='color:green; font-weight:bold;'>New event added successfully!</div>";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+
+?>
 
 
 
-
-
-          
         </div>
         
       </div>
     </div>
   </section>
+
+
+
   <script>
-
-
 
 
 let sidebar = document.querySelector(".sidebar");
@@ -193,6 +248,11 @@ sidebarBtn.onclick = function() {
 }else
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
+
+
  </script>
+
+
+
 </body>
 </html>
