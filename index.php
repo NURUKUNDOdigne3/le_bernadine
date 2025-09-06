@@ -48,7 +48,7 @@
     </div>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h6 class="m-0"><img class="img-fluid me-3" src="img/logo.png" alt=""></h6>
+            <h6 class="m-0"><img style="width: 200px;height: 150px;" class="img-fluid me-3" src="img/logo (2).png" alt=""></h6>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -56,15 +56,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About us</a>
+                <a href="#about" class="nav-item nav-link">À propos de nous</a>
                 <a href="#service" class="nav-item nav-link">Services</a>
-                <a href="#events" class="nav-item nav-link">Events</a>
-                <a href="#history" class="nav-item nav-link">History</a>
-                <a href="" class="nav-item nav-link">KURA SITE</a>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="#events" class="nav-item nav-link">Événements</a>
+                <a href="#history" class="nav-item nav-link">Histoire</a>
+                <a href="#history" class="nav-item nav-link">Saint Bernard Medical Center</a>
+                <a href="" class="nav-item nav-link">KURA HOUSE</a>
+                <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
             </div>
         </div>
-        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Login</a>
+        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Connexion</a>
     </nav>
 
 
@@ -78,10 +79,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <h1 style="color: white;" class="display-3 mb-4 animated slideInDown">To Seek God and Welcome Man</h1>
-                                    <p style="color: white;" class="fs-5 text-body mb-5">Founded in 1202 in Audenarde, Belgium, the Bernardine Cistercian Sisters serve 
-                                   God by serving His people —through prayer, education, healthcare, and pastoral care in communities across Belgium and Africa.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
+                                    <h1 style="color: white;" class="display-3 mb-4 animated slideInDown">Chercher Dieu et accueillir l’homme</h1>
+                                    <p style="color: white;" class="fs-5 text-body mb-5">Fondées en 1202 à Audenarde, en Belgique, les Sœurs Bernardines Cisterciennes 
+                                      servent Dieu en servant son peuple — à travers la prière,
+                                       l’éducation, les soins de santé et l’accompagnement pastoral dans les communautés en Belgique et en Afrique.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5">Plus de détails</a>
                                 </div>
                             </div>
                         </div>
@@ -93,10 +95,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <h1 class="display-3 text-white mb-4 animated slideInDown">A Life of Prayer and Service</h1>
-                                    <p class="fs-5 text-body mb-5"> Rooted in Cistercian spirituality, we live simply, love deeply, and work tirelessly for the sick,
-                                         the poor, and the young — bringing the hope of Christ wherever we are sent.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
+                                    <h1 class="display-3 text-white mb-4 animated slideInDown">Une vie de prière et de service</h1>
+                                    <p class="fs-5 text-body mb-5">Enracinées dans la spiritualité cistercienne, nous vivons simplement, aimons profondément et travaillons
+                                       sans relâche pour les malades, les pauvres et les jeunes — apportant l’espérance du Christ partout où nous sommes envoyées.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5">Plus de détails</a>
                                 </div>
                             </div>
                         </div>
@@ -128,26 +130,26 @@
                         <div class="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3" style="width: 200px; height: 200px;">
                             <div class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
                                 <h1 class="text-white mb-0">825</h1>
-                                <h2 class="text-white">Years</h2>
-                                <h5 class="text-white mb-0">Since 1202</h5>
+                                <h2 class="text-white">Ans</h2>
+                                <h5 class="text-white mb-0">Depuis 1202</h5>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <h1 class="display-6 mb-5">We have been spreading Gospel of the Lord since 1202 </h1>
-                        <p class="fs-5 text-primary mb-4">Welcome to the Bernardine Cistercian Sisters of Audenarde</p>
-                      
-                        <p class="mb-4">For over 800 years, our Congregation has served God and humanity with love and dedication.
-      Founded in 1202 in Belgium, we are committed to a life of prayer, simplicity, and service —
-      working in education, healthcare, pastoral care, and rural development across Belgium, Rwanda, Tchad, and Burkina Faso.
-      Guided by the Cistercian spirit of Saint Bernard, we seek God and embrace every person as His image.
-         </p>
+                        <h1 class="display-6 mb-5">Nous annonçons l’Évangile du Seigneur depuis 1202.</h1>
+                        <p class="fs-5 text-primary mb-4">Bienvenue chez les Sœurs Bernardines Cisterciennes d’Audenarde</p>
+                                
+                                  <p class="mb-4">Depuis plus de 800 ans, notre Congrégation sert Dieu et l’humanité avec amour et dévouement.
+          Fondée en 1202 en Belgique, nous nous engageons à une vie de prière, de simplicité et de service — œuvrant dans l’éducation,
+          les soins de santé, la pastorale et le développement rural en Belgique, au Rwanda, au Tchad et au Burkina Faso.
+          Guidées par l’esprit cistercien de saint Bernard, nous cherchons Dieu et accueillons chaque personne comme son image.
+                  </p>
 
          <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#admissionModal">
-  Read more about us
+  En savoir plus sur nous
 </button>
 
 <!-- Modal -->
@@ -233,9 +235,10 @@ This spirituality is an experience of seeking God, emphasizing:
     justify-content: center;
   ">
     <h2 style="color: white;font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">
-      What we have achieved after all</h2>
+      Ce que nous avons accompli après tout</h2>
     <p style="color: rgb(41, 40, 40);" class="mb-4" style="margin-bottom: 30px;">
-     Rooted in faith since 1202, the Bernardine Cistercian Sisters serve both individuals and communities through prayer, education, healthcare, and pastoral care in Belgium and Africa.
+       Enracinées dans la foi depuis 1202, les Sœurs Cisterciennes Bernardines servent à la fois les personnes
+        et les communautés par la prière, l’éducation, les soins de santé et l’accompagnement pastoral en Belgique et en Afrique.
     </p>
     <a href="#" style="
       background-color:white;
@@ -247,7 +250,7 @@ This spirituality is an experience of seeking God, emphasizing:
       width: max-content;
       transition: background-color 0.3s ease;
     " onmouseover="this.style.backgroundColor='#26c6d9'" onmouseout="this.style.backgroundColor='#2be4ff'">
-      More Details
+      Plus de détails
     </a>
   </div>
 
@@ -265,19 +268,19 @@ This spirituality is an experience of seeking God, emphasizing:
   ">
     <div style="background-color: rgba(255 255 255 / 0.85); padding: 20px; border-radius: 10px; text-align: center;">
       <h3 class="counter" data-target="100" style="font-size: 2.8rem; margin: 0; font-weight: 700;">0</h3>
-      <p style="margin: 5px 0 0; font-weight: 600;">Million Lives saved</p>
+      <p style="margin: 5px 0 0; font-weight: 600;">Un million de vies sauvées</p>
     </div>
     <div style="background-color: rgba(255 255 255 / 0.85); padding: 20px; border-radius: 10px; text-align: center;">
       <h3 class="counter" data-target="10000" style="font-size: 2.8rem; margin: 0; font-weight: 700;">0</h3>
-      <p style="margin: 5px 0 0; font-weight: 600;">Projects Succeed</p>
+      <p style="margin: 5px 0 0; font-weight: 600;">Projets réussis</p>
     </div>
     <div style="background-color: rgba(255 255 255 / 0.85); padding: 20px; border-radius: 10px; text-align: center;">
       <h3 class="counter" data-target="825" style="font-size: 2.8rem; margin: 0; font-weight: 700;">0</h3>
-      <p style="margin: 5px 0 0; font-weight: 600;">Years in Gospel</p>
+      <p style="margin: 5px 0 0; font-weight: 600;">Années dans l’Évangile</p>
     </div>
     <div style="background-color: rgba(255 255 255 / 0.85); padding: 20px; border-radius: 10px; text-align: center;">
       <h3 class="counter" data-target="5000" style="font-size: 2.8rem; margin: 0; font-weight: 700;">0</h3>
-      <p style="margin: 5px 0 0; font-weight: 600;">Active Members</p>
+      <p style="margin: 5px 0 0; font-weight: 600;">Membres actifs</p>
     </div>
   </div>
 
@@ -320,37 +323,37 @@ This spirituality is an experience of seeking God, emphasizing:
 <div class="container-xxl py-5">
     <div class="container">
          <div class="text-center mx-auto" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Our Missionary Presence Time line</h1>
+                <h1 class="display-6 mb-5">Chronologie de notre présence missionnaire</h1>
             </div>
             <div class="timeline">
   <div class="cont left">
     <div class="content">
       <h2>•	1932</h2>
-      <p>– Foundation of the first house in Rwanda: Notre Dame du Bon Conseil (Our Lady of Good Counsel).</p>
+      <p>– Fondation de la première maison au Rwanda : Notre-Dame du Bon Conseil (Our Lady of Good Counse)</p>
     </div>
   </div>
   <div class="cont right">
     <div class="content">
       <h2>•	1983 </h2>
-      <p>– Rwanda, in turn, became missionary by opening its first community in Chad.</p>
+      <p>– Le Rwanda est, à son tour, devenu missionnaire en ouvrant sa première communauté au Tchad.</p>
     </div>
   </div>
   <div class="cont left">
     <div class="content">
       <h2>•	1995 </h2>
-      <p>– Opening of a new missionary house in Bobo-Dioulasso, Burkina Faso</p>
+      <p>– Ouverture d’une nouvelle maison missionnaire à Bobo-Dioulasso, au Burkina Faso</p>
     </div>
   </div>
   <div class="cont right">
     <div class="content">
       <h2>•	1995</h2>
-      <p>– Second community in Chad (Bao): Our Lady of Peace.</p>
+      <p>– Deuxième communauté au Tchad (Bao) : Notre-Dame de la Paix</p>
     </div>
   </div>
   <div class="cont left">
     <div class="content">
       <h2>•	2004 </h2>
-      <p>– Third community in Chad (Moundou): Mary, Mother of Mercy</p>
+      <p>– Troisième communauté au Tchad (Moundou) : Marie, Mère de la Miséricorde</p>
     </div>
   </div>
 </div>
@@ -366,7 +369,7 @@ This spirituality is an experience of seeking God, emphasizing:
     <div id="service" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Our General Services</h1>
+                <h1 class="display-6 mb-5">Nos Services Généraux</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -375,11 +378,12 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-10-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Monastic Hospitality</h4>
+                            <h4 class="mb-0">Hospitalité monastique</h4>
                         </div>
-                        <p class="mb-4">We offer a welcoming environment for guests seeking spiritual renewal. Our guesthouse provides a peaceful setting 
-                            for individuals and groups to experience monastic life, participate in retreat talks, and enjoy the tranquility of our community. </p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Nous offrons un environnement accueillant pour les hôtes en quête de renouveau
+                           spirituel. Notre maison d’hôtes propose un cadre paisible permettant aux individus et aux groupes de découvrir la vie monastique,
+                           de participer à des conférences de retraite et de goûter à la tranquillité de notre communauté. </p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -388,10 +392,11 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-01-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Spiritual Retreats</h4>
+                            <h4 class="mb-0">Retraites spirituelles</h4>
                         </div>
-                        <p class="mb-4">Throughout the year, we host themed retreats focusing on prayer, reflection, and personal growth. These retreats are designed to help participants deepen their faith and find inner peace. </p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Tout au long de l’année, nous organisons des retraites thématiques axées sur la prière, la réflexion et le développement personnel.
+                           Ces retraites sont conçues pour aider les participants à approfondir leur foi et à trouver la paix intérieure.</p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -400,10 +405,11 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-05-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Community Prayer and Liturgy</h4>
+                            <h4 class="mb-0">Prière communautaire et liturgie</h4>
                         </div>
-                        <p class="mb-4">Central to our daily life is communal prayer. We gather five times a day for the Divine Office and celebrate the Eucharist daily, inviting all to join us in worship and reflection.</p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Au cœur de notre vie quotidienne se trouve la prière communautaire. Nous nous réunissons cinq fois par jour pour l’Office divin et 
+                          célébrons l’Eucharistie quotidiennement, invitant tous à se joindre à nous dans la prière et la réflexion.</p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -412,11 +418,12 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-08-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Safeguarding and Support Services</h4>
+                            <h4 class="mb-0">Services de protection et de soutien</h4>
                         </div>
-                        <p class="mb-4">Committed to providing a safe environment, we have enhanced DBS checks for all sisters and implement good safeguarding practices
-                             within our guesthouse. We also offer support through the 'Safe Spaces' service for those affected by abuse within the Church.</p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Engagées à offrir un environnement sûr, nous avons renforcé les vérifications DBS pour toutes les sœurs et mettons
+                           en œuvre de bonnes pratiques de protection au sein de notre maison d’hôtes. Nous proposons également un accompagnement via
+                            le service 'Espaces sûrs' pour les personnes touchées par des abus au sein de l’Église. </p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -425,10 +432,12 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-07-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Educational and Spiritual Formation</h4>
+                            <h4 class="mb-0">Formation éducative et spirituelle</h4>
                         </div>
-                        <p class="mb-4">We engage in educational activities, including courses and workshops, to foster spiritual growth and learning. These programs are open to all who wish to deepen their understanding of faith and monastic life.</p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Nous participons à des activités éducatives, incluant des cours et des ateliers, afin de favoriser
+                           la croissance spirituelle et l’apprentissage. Ces programmes
+                           sont ouverts à tous ceux qui souhaitent approfondir leur compréhension de la foi et de la vie monastique. </p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -437,10 +446,10 @@ This spirituality is an experience of seeking God, emphasizing:
                             <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
                                 <img class="img-fluid" src="img/icon/icon-01-light.png" alt="">
                             </div>
-                            <h4 class="mb-0">Health care Services</h4>
+                            <h4 class="mb-0">Service de soins de santé</h4>
                         </div>
-                        <p class="mb-4">Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <a class="btn btn-light px-3" href="">Read More</a>
+                        <p class="mb-4">Santeee de la vie</p>
+                        <a class="btn btn-light px-3" href="">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -452,12 +461,8 @@ This spirituality is an experience of seeking God, emphasizing:
     <div id="events" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Our Latest Events</h1>
+                <h1 class="display-6 mb-5">Nos derniers événements</h1>
             </div> 
-
-
-
-
 
                 <div class="container swiper">
       <div class="wrapper">
@@ -466,11 +471,16 @@ This spirituality is an experience of seeking God, emphasizing:
           <div class="card swiper-slide">
             <div class="card-image">
               <img src="img/bg2.png" alt="Design Trends" />
-              <div class="card-tag">Design</div>
+              <div class="card-tag">Réunion</div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Modern UI Trends for 2025</h3>
-              <p class="card-text">Explore the latest user interface design trends that are shaping the digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
+              <h3 class="card-title">La famille.ds l'histoire de la congrégation c'est aujourd'hui
+                 le 05/08/2025. Que la fondation a Bozo a vu le jour.</h3>
+
+
+              <p class="card-text">Ici c'est à l'entrée de Bozo où  les soeurs qui sont allées  à Bozo le 03 /08 sont venu nous 
+                rejoindre à 11h  et ensuite le conseil paroissial le curé le chef du village.sont venus à
+                 notre rencontre pour marquer l'accueil.c'etait agréable.et nous avons fait le cortège vers la paroisse.</p>
               <div class="card-footer">
                 <div class="card-profile">
                   <img src="img/WhatsApp Image 2025-08-06 at 16.52.58.jpeg" alt="Alex Smith" />
@@ -487,12 +497,12 @@ This spirituality is an experience of seeking God, emphasizing:
           <!-- Single Card -->
           <div class="card swiper-slide">
             <div class="card-image">
-              <img src="img/WhatsApp Image 2025-08-06 at 16.52.59.jpeg" alt="Development" />
-              <div class="card-tag">Social</div>
+              <img src="img/about.png" alt="Development" />
+              <div class="card-tag">Visite</div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">Best Frontend Frameworks</h3>
-              <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and libraries that developers are using to build modern web applications.</p>
+              <h3 class="card-title">La visite de l Eveque du Tchad Monseigneur Dominique Le 4 -5 Aout 2025</h3>
+              <p class="card-text">Chères consoeurs hier  nous avons vécu une grande  joie à l'école Notre Dame de l'Esperance de Bedjom. 9 élèves sur 10 ont reçu le Baccalauréat. Et, nous sommes les 1ers dans tout le logone occidentale et parmi les 5 premiers au niveau du pays. Nous rendons grâce au seigneur pour ces merveilles.</p>
               <div class="card-footer">
                 <div class="card-profile">
                   <img src="images/user-2.jpg" alt="Jessica Chen" />
@@ -508,12 +518,16 @@ This spirituality is an experience of seeking God, emphasizing:
           <!-- Single Card -->
           <div class="card swiper-slide">
             <div class="card-image">
-              <img src="img/carousel-1.jpg" alt="AI" />
-              <div class="card-tag">Health</div>
+              <img src="img/Post_1.jpeg" alt="AI" />
+              <div class="card-tag">Sante</div>
             </div>
             <div class="card-content">
-              <h3 class="card-title">AI User Experience Design</h3>
-              <p class="card-text">How artificial intelligence is revolutionizing user experience design and enabling more personalized, intuitive interfaces for digital products.</p>
+              <h3 class="card-title">Les Communautés du Tchad honorent Saint Bernard</h3>
+              <p class="card-text">Mieux vaut tard que jamais les trois communautés du Tchad ont bien fêté ensemble notre
+                 patron St Bernard à Mbalkabra.dans un petit groupe de nos collaborateurs proches actuels et nos aspirantes 
+                 interne et externes. C'était Une bonne occasion de faire connaître st Bernard  et sensibiliser pour les 
+                 amis de st Bernard. En même temps Nous avons accueilli notre aspirante  c'est elle en aube  blanche à côté du prêtre . 
+                Joyeusement elle a fait enfant de coeur . La journée a été agréable . nous rendons grâce au seigneur.</p>
               <div class="card-footer">
                 <div class="card-profile">
                   <img src="img/about.png" alt="Marcus Johnson" />
@@ -527,47 +541,8 @@ This spirituality is an experience of seeking God, emphasizing:
             </div>
           </div>
           <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/WhatsApp Image 2025-08-06 at 16.53.14.jpeg" alt="Productivity" />
-              <div class="card-tag">Education</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Workspace Design for Focus</h3>
-              <p class="card-text">Designing workspaces that maximize productivity and minimize distractions for creative professionals in the hybrid work environment.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/about.png" alt="Sarah Miller" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Edited by Admin</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/WhatsApp Image 2025-08-06 at 16.52.59.jpeg" alt="Animation" />
-              <div class="card-tag">Health</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Micro Animation Designs</h3>
-              <p class="card-text">The small animations and interactions that make a big difference in user experience and how to implement them effectively in your designs.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/about.png" alt="David Park" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Edited By</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
+ 
+          
         </div>
         <!-- Pagination -->
         <div class="swiper-pagination"></div>
@@ -582,6 +557,90 @@ This spirituality is an experience of seeking God, emphasizing:
 
 
 
+             <div class="container swiper">
+      <div class="wrapper">
+        <div class="card-list swiper-wrapper">
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/bg2.png" alt="Design Trends" />
+              <div class="card-tag">Service</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">La famille.ds l'histoire de la congrégation c'est aujourd'hui
+                 le 05/08/2025. Que la fondation a Bozo a vu le jour.</h3>
+
+              <p class="card-text"></p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/WhatsApp Image 2025-08-06 at 16.52.58.jpeg" alt="Alex Smith" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Edited</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/about.png" alt="Development" />
+              <div class="card-tag">Visite</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">La visite de l Eveque du Tchad Monseigneur Dominique Le 4 -5 Aout 2025</h3>
+              <p class="card-text">Chères consoeurs hier  nous avons vécu une grande  joie à l'école Notre Dame de l'Esperance de Bedjom. 9 élèves sur 10 ont reçu le Baccalauréat. Et, nous sommes les 1ers dans tout le logone occidentale et parmi les 5 premiers au niveau du pays. Nous rendons grâce au seigneur pour ces merveilles.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="images/user-2.jpg" alt="Jessica Chen" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Editted</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="img/Post_1.jpeg" alt="AI" />
+              <div class="card-tag">Santee</div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">AI User Experience Design</h3>
+              <p class="card-text">Mieux vaut tard que jamais les trois communautés du Tchad ont bien fêté ensemble notre
+                 patron St Bernard à Mbalkabra.dans un petit groupe de nos collaborateurs proches actuels et nos aspirantes 
+                 interne et externes. C'était Une bonne occasion de faire connaître st Bernard  et sensibiliser pour les 
+                 amis de st Bernard. En même temps Nous avons accueilli notre aspirante  c'est elle en aube  blanche à côté du prêtre . 
+                Joyeusement elle a fait enfant de coeur . La journée a été agréable . nous rendons grâce au seigneur.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="img/about.png" alt="Marcus Johnson" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Editted by</span>
+                    <span class="card-profile-role">Admin</span>
+                  </div>
+                </div>
+                <a href="#" class="card-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single Card -->
+ 
+          
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
 
 
 
@@ -589,7 +648,7 @@ This spirituality is an experience of seeking God, emphasizing:
     <div id="history" class="container-xxl py-5">
    <div class="container">
         <div class="text-center mx-auto" style="max-width: 500px;">
-                <h1 style="color: #0059ff;" class="display-6 mb-5">Backgound of the foundation</h1>
+                <h1 style="color: #0059ff;" class="display-6 mb-5">Historique de la fondation</h1>
             </div> 
             <!-- BACKGROUND OF THE FOUNDATION SECTION -->
 <section class="foundation-section">
@@ -597,14 +656,19 @@ This spirituality is an experience of seeking God, emphasizing:
     <!-- Text Side -->
     <div class="foundation-text">
       <p>
-        The Congregation was founded by a priest (canon) named Arnulf, who wished to love and serve God in the poor.
-        The house he built was first an inn for pilgrims who found themselves outside the closed city gates. Soon after, it became a hospital where the poor and needy were cared for — this was the Notre Dame Hospital of Oudenaarde.
+        La congrégation a été fondée par un prêtre (chanoine) nommé Arnulf, qui souhaitait aimer et servir Dieu parmi les pauvres.
+La maison qu’il a construite était d’abord une auberge pour les pèlerins se retrouvant en dehors des portes fermées de la ville. Peu 
+après, elle est devenue un hôpital où les
+ pauvres et les nécessiteux étaient pris en charge — il s’agissait de l’Hôpital Notre-Dame d’Oudenaarde.
       </p>
       <p>
-        This community distinguished itself by its fervor and dedication to the poor. Affiliated with Cîteaux, the young congregation took Saint Bernard as its spiritual father. After the French Revolution, the Congregation, which until then had been dedicated to hospital work, opened itself to education — especially for young girls, who were often neglected.
+        Cette communauté s’est distinguée par son ferveur et son dévouement envers les pauvres. Affiliée à Cîteaux, 
+        la jeune congrégation prit saint Bernard comme père spirituel. Après la Révolution française, la Congrégation, qui jusque-là s’était consacrée
+         au travail hospitalier, s’ouvrit à l’éducation — en particulier pour les jeunes filles, souvent négligées.
       </p>
       <p>
-        Later, it continued striving to respond to the new calls of the local and universal Church, as well as of society, while remaining attentive to the signs of the times.
+        Par la suite, elle continua de s’efforcer de répondre aux nouveaux appels
+         de l’Église locale et universelle, ainsi qu’à ceux de la société, tout en restant attentive aux signes des temps.
       </p>
     </div>
   </div>
@@ -612,7 +676,7 @@ This spirituality is an experience of seeking God, emphasizing:
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#admissionModal">
-  View Admission Requirements
+  Voir les conditions d’admission
 </button>
 
 <!-- Modal -->
@@ -677,12 +741,13 @@ This spirituality is an experience of seeking God, emphasizing:
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-white mb-5">Want to Book an appointment for more info'</h1>
-                    <p class="text-white mb-5">Fill the following form below with it's regarding input requests for clealy understanding just Feel free to reach us out for more information and kindly book and appointment and get responded with 24 working hours.</p>
+                    <h1 class="display-6 text-white mb-5">Vous souhaitez prendre rendez-vous pour plus d’informations</h1>
+                    <p class="text-white mb-5">Remplissez le formulaire ci-dessous en fournissant les informations demandées pour une meilleure compréhension. N’hésitez pas à nous
+                       contacter pour plus d’informations et veuillez prendre rendez-vous afin de recevoir une réponse sous 24 heures ouvrables.</p>
                     <div class="bg-white rounded p-3">
                         <div class="d-flex align-items-center bg-primary rounded p-3">
                             <img class="flex-shrink-0 rounded-circle me-3" src="img/manser_" alt="Manseri" >
-                            <h5 class="text-white mb-0">Call Us:  +250-788-756-894</h5>
+                            <h5 class="text-white mb-0">Contact sur:  +250-788-756-894</h5>
                         </div>
                     </div>
                 </div>
@@ -693,25 +758,25 @@ This spirituality is an experience of seeking God, emphasizing:
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Your Name</label>
+                                        <label for="gname">Votre nom</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email">
-                                        <label for="gmail">Your Email</label>
+                                        <label for="gmail">Votre e-mail</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="cname" placeholder="Child Name">
-                                        <label for="cname">Your Mobile</label>
+                                        <label for="cname">Votre numéro de téléphone</label>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="cage" placeholder="Child Age">
-                                        <label for="cage">Service Type</label>
+                                        <label for="cage">Type de service</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -721,7 +786,7 @@ This spirituality is an experience of seeking God, emphasizing:
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">Get Appointment</button>
+                                    <button class="btn btn-primary py-3 px-5" type="submit">Prendre rendez-vous</button>
                                 </div>
                             </div>
                         </form>
@@ -737,19 +802,19 @@ This spirituality is an experience of seeking God, emphasizing:
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Meet Our Professional Team Members</h1>
+                <h1 class="display-6 mb-5">Découvrez nos membres d’équipe professionnels</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
                         <img class="img-fluid" src="" alt="">
                         <div class="text-center p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
+                            <h5> Soeur Noella Ghijs</h5>
+                            <span>Superieure generale</span>
                         </div>
                         <div class="team-text text-center bg-white p-4">
-                            <h5>Full Name</h5>
-                            <p>Designation</p>
+                            <h5>,</h5>
+                            <p></p>
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square btn-light m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -763,8 +828,8 @@ This spirituality is an experience of seeking God, emphasizing:
                     <div class="team-item rounded">
                         <img class="img-fluid" src="" alt="">
                         <div class="text-center p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
+                            <h5>Soeur Donatilla Mukankusi</h5>
+                            <span>Assistante generale</span>
                         </div>
                         <div class="team-text text-center bg-white p-4">
                             <h5>Full Name</h5>
@@ -782,8 +847,8 @@ This spirituality is an experience of seeking God, emphasizing:
                     <div class="team-item rounded">
                         <img class="img-fluid" src="" alt="">
                         <div class="text-center p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
+                            <h5>Soeur Lieve Ghijs</h5>
+                            <span>Superieure provinciale province africaine</span>
                         </div>
                         <div class="team-text text-center bg-white p-4">
                             <h5>Full Name</h5>
@@ -800,8 +865,8 @@ This spirituality is an experience of seeking God, emphasizing:
                     <div class="team-item rounded">
                         <img class="img-fluid" src="" alt="">
                         <div class="text-center p-4">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
+                            <h5>Soeur Immaculée UMUZAYIRE</h5>
+                            <span> Superieure Provinciale Region Flamande</span>
                         </div>
                         <div class="team-text text-center bg-white p-4">
                             <h5>Full Name</h5>
@@ -826,8 +891,8 @@ This spirituality is an experience of seeking God, emphasizing:
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h6 class="text-white mb-4"><img style="width: 50px;height: 50px;" class="img-fluid me-3" src="img/logo_2.png" alt="">Bernardine Cistercian Sisters of Audenarde organisation</h6>
-                    <p>The foundation of Bernardine Cistercian Sisters of Audenarde</p>
+                    <h6 class="text-white mb-4"><img style="width: 50px;height: 50px;" class="img-fluid me-3" src="img/logo_2.png" alt=""> Organisation des Sœurs Cisterciennes Bernardines d’Audenard </h6>
+                    <p>Organisation des Sœurs Cisterciennes Bernardines d’Audenarde</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -836,13 +901,13 @@ This spirituality is an experience of seeking God, emphasizing:
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 class="text-light mb-4">Adresse</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Kigali - Rwanda</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+250-788-756-894</p>
                     <p><i class="fa fa-envelope me-3"></i>info@bernadine.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <h5 class="text-light mb-4">Liens rapides</h5>
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="">Our Services</a>
@@ -850,11 +915,11 @@ This spirituality is an experience of seeking God, emphasizing:
                     <a class="btn btn-link" href="">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Fill your email to recieve the latest updates.</p>
+                    <h5 class="text-light mb-4">Bulletin d’information</h5>
+                    <p>Saisissez votre e-mail pour recevoir les dernières mises à jour</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre e-mail">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">S’inscrire</button>
                     </div>
                 </div>
             </div>
@@ -863,11 +928,10 @@ This spirituality is an experience of seeking God, emphasizing:
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Bernadine Rwanda organisation</a>, All Rights Reserved.
+                        &copy; <a href="#">Bernadine Rwanda organisation</a>,Tous droits réservés.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                       
-                        Designed and Developed By <a href="">Christopher - Saltel</a>
+                       Conçu et développé par <a href="">Christopher - Saltel</a>
                     </div>
                 </div>
             </div>
@@ -876,8 +940,6 @@ This spirituality is an experience of seeking God, emphasizing:
 
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
 
 
      <!-- Linking Swiper script -->
