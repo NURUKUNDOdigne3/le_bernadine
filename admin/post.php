@@ -1,7 +1,16 @@
 <?php
 
 include 'config/conn.php';
+
 session_start();
+
+
+if(!isset($_SESSION['your_name'])){
+   
+    header("Location: ../admin/login/login.php");
+    exit();
+}
+
 
 ?>
 
@@ -19,9 +28,7 @@ session_start();
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <style>
     .btn-update {
@@ -47,35 +54,35 @@ session_start();
     </div>
       <ul class="nav-links">
         <li>
-          <a href="#">
+          <a href="index.php">
             <i class='bx bx-grid-alt' ></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
       
         <li>
-          <a href="#" class="active">
+          <a href="post.php" class="active">
             <i class='bx bx-list-ul' ></i>
             <span class="links_name">Post Event</span>
           </a>
         </li>
                
         <li>
-          <a href="#">
+          <a href="sub.php">
             <i class='bx bx-book-alt' ></i>
-            <span class="links_name">Appointments</span>
+            <span class="links_name">Subcribe Emails</span>
           </a>
         </li>
         
         <li>
-          <a href="#">
+          <a href="contact.php">
             <i class='bx bx-message' ></i>
             <span class="links_name">Messages</span>
           </a>
         </li>
        
         <li class="log_out">
-          <a href="#">
+          <a href="logout.php">
             <i class='bx bx-log-out'></i>
             <span class="links_name">Log out</span>
           </a>
@@ -92,11 +99,7 @@ session_start();
         <input type="text" placeholder="Search...">
         <i class='bx bx-search' ></i>
       </div>
-      <div class="profile-details">
-        <img src="images/profile.jpg" alt="">
-        <span class="admin_name">admin</span>
-        <i class='bx bx-chevron-down' ></i>
-      </div>
+      
     </nav>
     <div class="home-content">   
           </div>
@@ -111,8 +114,8 @@ session_start();
     + Add New Event
   </button>
 
- 
-<!-- Events Table -->
+
+
 <table id="eventsTable" class="display table table-striped" style="width:100%">
   <thead>
     <tr>
@@ -120,13 +123,15 @@ session_start();
       <th>Event_Title</th>
       <th>Sector_Name</th>
       <th>Description</th>
-      <th>Event_Picture</th>
+      <th>Event__Picture</th>
+  
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
+
     <?php
-    // Fetch records from DB
+    
     $sql = "SELECT id, event_title, sector_name, description, event_picture FROM evnts";
     $result = $conn->query($sql);
 
@@ -138,11 +143,19 @@ session_start();
         echo "<td>" . $row['sector_name'] . "</td>";
         echo "<td>" . $row['description'] . "</td>";
         echo "<td><img src='uploads/" . $row['event_picture'] . "' width='80'></td>";
-        echo "<td>
-                <a href='update.php?id=" . $row['id'] . "' class='btn btn-update btn-sm'>Update</a>
-                <a href='delete.php?id=" . $row['id'] . "' class='btn btn-delete btn-sm'>Delete</a>
-              </td>";
+    
+        
+                     echo "<td>
+                        <div class='d-flex'>
+                            <a href='update_event.php?id=" . $row['id'] . "' class='btn btn-success btn-sm me-2'>Update</a>
+                            <a href='delete.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm' onclick=\"return confirm('Voulez-vous vraiment supprimer cet événement ?');\">Delete</a>
+                        </div>
+                      </td>";
+
+
         echo "</tr>";
+
+
       }
     } else {
       echo "<tr><td colspan='6' class='text-center'>No events found</td></tr>";

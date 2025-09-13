@@ -1,3 +1,8 @@
+<?php
+
+include "admin/config/conn.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +13,10 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link href="img/logo_2.png" rel="icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
@@ -68,8 +77,6 @@
 
 
 
-
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -84,9 +91,6 @@
         </div>
     </div>
     <!-- Page Header End -->
-
-
-    <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -95,37 +99,72 @@
                     <p class="mb-4">Nous serions ravis de vous entendre !
                    Que vous ayez des questions, des commentaires ou besoin d’assistance, veuillez remplir le formulaire ci-dessous et 
                    notre équipe vous répondra dans les plus brefs délais.</p>
-                    <form>
+                    <form method="post">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="user_name" id="name" placeholder="Your Name">
                                     <label for="name">Votre nom</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                                     <label for="email">Votre e-mail</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                                     <label for="subject">Sujet</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 100px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Envoyer le message</button>
+                                <button class="btn btn-primary py-3 px-5" name="submit" type="submit">Envoyer le message</button>
                             </div>
                         </div>
                     </form>
+
+                    <?php
+
+                    if (isset($_POST['submit'])) {
+
+    $fullname = $conn->real_escape_string($_POST['user_name']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $subject = $conn->real_escape_string($_POST['subject']);
+    $message = $conn->real_escape_string($_POST['message']);
+
+    
+    $sql = "INSERT INTO contacts (Full_Names, Email, Sujet, Message) 
+            VALUES ('$fullname', '$email', '$subject', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Succès!',
+                    text: 'Message sent succefully.',
+                    confirmButtonText: 'Merie Bon coupe'
+                });
+              </script>";
+    } else {
+        echo "<script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erreur!',
+                    text: 'Une erreur est survenue:',
+                    confirmButtonText: 'OK'
+                });
+              </script>";
+    }
+}
+?>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">

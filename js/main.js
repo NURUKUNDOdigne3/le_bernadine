@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+   
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -12,11 +12,10 @@
     spinner();
     
     
-    // Initiate the wowjs
     new WOW().init();
 
 
-    // Sticky Navbar
+   
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').addClass('shadow-sm').css('top', '0px');
@@ -30,24 +29,24 @@
     new Swiper(".wrapper", {
   loop: true,
   spaceBetween: 30,
-  // Autoplay
+  
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
-  // Pagination bullets
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
-  // Navigation arrows
+  
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // Responsive breakpoints
+
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -63,8 +62,6 @@
 
 
 
-    
-    // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -78,7 +75,6 @@
     });
 
 
-    // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000

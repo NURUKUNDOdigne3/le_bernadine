@@ -1,3 +1,9 @@
+<?php
+
+include "admin/config/conn.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +14,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link href="img/logo_2.png" rel="icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
@@ -17,16 +26,13 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
 </head>
 
 <body>
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
-
-
 
     <div id="home" class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
         <div class="row gx-0 align-items-center">
@@ -62,13 +68,11 @@
                 <a href="#history" class="nav-item nav-link">Histoire</a>
                 <a href="#history" class="nav-item nav-link">Saint Bernard Medical Center</a>
                 <a href="" class="nav-item nav-link">KURA HOUSE</a>
-                <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
+                <a href="contact.php" class="nav-item nav-link">Contactez-nous</a>
             </div>
         </div>
-        <a href="" class="btn btn-primary px-3 d-none d-lg-block">Connexion</a>
+        <a href="admin/login/login.php" class="btn btn-primary px-3 d-none d-lg-block">Connexion</a>
     </nav>
-
-
 
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -220,11 +224,9 @@ This spirituality is an experience of seeking God, emphasizing:
     </div>
     <!-- About End -->
 
-     
 
 <section style="display: flex; flex-wrap: wrap; min-height: 350px; font-family: 'Poppins', sans-serif;">
 
-  <!-- Left side: blue background with text -->
   <div style="
     flex: 1 1 400px;
     background-color: #0059ff;
@@ -235,10 +237,10 @@ This spirituality is an experience of seeking God, emphasizing:
     justify-content: center;
   ">
     <h2 style="color: white;font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">
-      Ce que nous avons accompli après tout</h2>
+      Ce que nous avons accompli</h2>
     <p style="color: rgb(41, 40, 40);" class="mb-4" style="margin-bottom: 30px;">
        Enracinées dans la foi depuis 1202, les Sœurs Cisterciennes Bernardines servent à la fois les personnes
-        et les communautés par la prière, l’éducation, les soins de santé et l’accompagnement pastoral en Belgique et en Afrique.
+        et les communautés par la prière, l’éducation, les soins de santé et l’accompagnement pastoral en Belgique( oudenaarde - gand -bassvellde )et en Afrique Rwanda(Kigali-Nyarugenge - Kamonyi - Kansi - Butare -Rwamagana) Burkina Faso( Bozo - Bobo-Dioulasso), Tchad(Moundou - Mbalkabra - Bedjam).
     </p>
     <a href="#" style="
       background-color:white;
@@ -287,7 +289,7 @@ This spirituality is an experience of seeking God, emphasizing:
 </section>
 
 <script>
-  // Animate counters when visible
+ 
   const counters = document.querySelectorAll('.counter');
   const speed = 100;
 
@@ -455,187 +457,19 @@ This spirituality is an experience of seeking God, emphasizing:
             </div>
         </div>
     </div>
-    <!-- Service End -->
-
+  
     <!--Events Part now-->
     <div id="events" class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto" style="max-width: 500px;">
                 <h1 class="display-6 mb-5">Nos derniers événements</h1>
             </div> 
+            
+            <?php
+            include 'event.php';
+            ?>
 
-                <div class="container swiper">
-      <div class="wrapper">
-        <div class="card-list swiper-wrapper">
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/bg2.png" alt="Design Trends" />
-              <div class="card-tag">Réunion</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">La famille.ds l'histoire de la congrégation c'est aujourd'hui
-                 le 05/08/2025. Que la fondation a Bozo a vu le jour.</h3>
-
-
-              <p class="card-text">Ici c'est à l'entrée de Bozo où  les soeurs qui sont allées  à Bozo le 03 /08 sont venu nous 
-                rejoindre à 11h  et ensuite le conseil paroissial le curé le chef du village.sont venus à
-                 notre rencontre pour marquer l'accueil.c'etait agréable.et nous avons fait le cortège vers la paroisse.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/WhatsApp Image 2025-08-06 at 16.52.58.jpeg" alt="Alex Smith" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Edited</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/about.png" alt="Development" />
-              <div class="card-tag">Visite</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">La visite de l Eveque du Tchad Monseigneur Dominique Le 4 -5 Aout 2025</h3>
-              <p class="card-text">Chères consoeurs hier  nous avons vécu une grande  joie à l'école Notre Dame de l'Esperance de Bedjom. 9 élèves sur 10 ont reçu le Baccalauréat. Et, nous sommes les 1ers dans tout le logone occidentale et parmi les 5 premiers au niveau du pays. Nous rendons grâce au seigneur pour ces merveilles.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="images/user-2.jpg" alt="Jessica Chen" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Editted</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/Post_1.jpeg" alt="AI" />
-              <div class="card-tag">Sante</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">Les Communautés du Tchad honorent Saint Bernard</h3>
-              <p class="card-text">Mieux vaut tard que jamais les trois communautés du Tchad ont bien fêté ensemble notre
-                 patron St Bernard à Mbalkabra.dans un petit groupe de nos collaborateurs proches actuels et nos aspirantes 
-                 interne et externes. C'était Une bonne occasion de faire connaître st Bernard  et sensibiliser pour les 
-                 amis de st Bernard. En même temps Nous avons accueilli notre aspirante  c'est elle en aube  blanche à côté du prêtre . 
-                Joyeusement elle a fait enfant de coeur . La journée a été agréable . nous rendons grâce au seigneur.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/about.png" alt="Marcus Johnson" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Editted by</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Single Card -->
- 
-          
-        </div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Navigation Buttons -->
-        <div class="swiper-slide-button swiper-button-prev"></div>
-        <div class="swiper-slide-button swiper-button-next"></div>
-      </div>
     </div>
-
-
-             <div class="container swiper">
-      <div class="wrapper">
-        <div class="card-list swiper-wrapper">
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/bg2.png" alt="Design Trends" />
-              <div class="card-tag">Service</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">La famille.ds l'histoire de la congrégation c'est aujourd'hui
-                 le 05/08/2025. Que la fondation a Bozo a vu le jour.</h3>
-
-              <p class="card-text"></p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/WhatsApp Image 2025-08-06 at 16.52.58.jpeg" alt="Alex Smith" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Edited</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/about.png" alt="Development" />
-              <div class="card-tag">Visite</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">La visite de l Eveque du Tchad Monseigneur Dominique Le 4 -5 Aout 2025</h3>
-              <p class="card-text">Chères consoeurs hier  nous avons vécu une grande  joie à l'école Notre Dame de l'Esperance de Bedjom. 9 élèves sur 10 ont reçu le Baccalauréat. Et, nous sommes les 1ers dans tout le logone occidentale et parmi les 5 premiers au niveau du pays. Nous rendons grâce au seigneur pour ces merveilles.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="images/user-2.jpg" alt="Jessica Chen" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Editted</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Single Card -->
-          <div class="card swiper-slide">
-            <div class="card-image">
-              <img src="img/Post_1.jpeg" alt="AI" />
-              <div class="card-tag">Santee</div>
-            </div>
-            <div class="card-content">
-              <h3 class="card-title">AI User Experience Design</h3>
-              <p class="card-text">Mieux vaut tard que jamais les trois communautés du Tchad ont bien fêté ensemble notre
-                 patron St Bernard à Mbalkabra.dans un petit groupe de nos collaborateurs proches actuels et nos aspirantes 
-                 interne et externes. C'était Une bonne occasion de faire connaître st Bernard  et sensibiliser pour les 
-                 amis de st Bernard. En même temps Nous avons accueilli notre aspirante  c'est elle en aube  blanche à côté du prêtre . 
-                Joyeusement elle a fait enfant de coeur . La journée a été agréable . nous rendons grâce au seigneur.</p>
-              <div class="card-footer">
-                <div class="card-profile">
-                  <img src="img/about.png" alt="Marcus Johnson" />
-                  <div class="card-profile-info">
-                    <span class="card-profile-name">Editted by</span>
-                    <span class="card-profile-role">Admin</span>
-                  </div>
-                </div>
-                <a href="#" class="card-button">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Single Card -->
- 
-          
-        </div>
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Navigation Buttons -->
-        <div class="swiper-slide-button swiper-button-prev"></div>
-        <div class="swiper-slide-button swiper-button-next"></div>
-      </div>
     </div>
 
 
@@ -731,67 +565,6 @@ après, elle est devenue un hôpital où les
    </div>
     </div>
 
-
-    <!-- Appointment Start -->
-    <div class="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-white mb-5">Vous souhaitez prendre rendez-vous pour plus d’informations</h1>
-                    <p class="text-white mb-5">Remplissez le formulaire ci-dessous en fournissant les informations demandées pour une meilleure compréhension. N’hésitez pas à nous
-                       contacter pour plus d’informations et veuillez prendre rendez-vous afin de recevoir une réponse sous 24 heures ouvrables.</p>
-                    <div class="bg-white rounded p-3">
-                        <div class="d-flex align-items-center bg-primary rounded p-3">
-                            <img class="flex-shrink-0 rounded-circle me-3" src="img/manser_" alt="Manseri" >
-                            <h5 class="text-white mb-0">Contact sur:  +250-788-756-894</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white rounded p-5">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Votre nom</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email">
-                                        <label for="gmail">Votre e-mail</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cname" placeholder="Child Name">
-                                        <label for="cname">Votre numéro de téléphone</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cage" placeholder="Child Age">
-                                        <label for="cage">Type de service</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">Prendre rendez-vous</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Appointment End -->
 
 
     <!-- Team Start -->
@@ -914,8 +687,38 @@ après, elle est devenue un hôpital où les
                     <h5 class="text-light mb-4">Bulletin d’information</h5>
                     <p>Saisissez votre e-mail pour recevoir les dernières mises à jour</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre e-mail">
-                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">S’inscrire</button>
+                      <form method="post">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" name="subcribe" type="text" placeholder="Votre e-mail">
+                        <input type="submit" value="S’inscrire" name="sub" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">
+                        </form>
+                        <?php
+                        if (isset($_POST["sub"])) {
+                           $subcribe = $_POST["subcribe"];
+
+                           $insert = "INSERT INTO email_sub VALUES('','$subcribe')";
+                           $sql = mysqli_query($conn, $insert);
+
+                          if ($insert == true) {
+                           echo "<script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Succès!',
+                    text: 'Email subcription added successfully.',
+                    confirmButtonText: 'Mercie Bon coupe'
+                });
+              </script>";
+    } else {
+        echo "<script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erreur!',
+                    text: 'Une erreur est survenue:',
+                    confirmButtonText: 'OK'
+                });
+              </script>";
+                      }
+                    }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -938,9 +741,8 @@ après, elle est devenue un hôpital où les
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-     <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Custom Script -->
+   
     <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
